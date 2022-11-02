@@ -3,15 +3,15 @@ function increaseBalance(x, y) {
   return x;
 }
 
-function decreaseBalance(x, y) { //не передан второй аргемент
+function decreaseBalance(x, y) {
   x -= y;
   return x;
 }
 
 function divideBalanceByAccounts(x, y) {
   x /= y;
+  console.log(`x = ${x}`);
   return x; 
-  //console.log("x"); данная строчка не будет выполняться т.к. выход происходит после return
 }
 
 function getRestAfterDivision(x, y) {
@@ -21,7 +21,7 @@ function getRestAfterDivision(x, y) {
 
 console.log(increaseBalance(3000, 700));
 console.log(decreaseBalance(3000, 700));
-console.log(divideBalanceByAccounts(3000, 2)); //функция принимает два аргемента, третий лишний
+console.log(divideBalanceByAccounts(3000, 2));
 console.log(getRestAfterDivision(7000, 3));
 
 //Декримент и Инкремент
